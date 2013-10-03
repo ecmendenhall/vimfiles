@@ -20,17 +20,12 @@ set expandtab
 
 let mapleader = ","
 
-color darkbone
-
 map <leader>n :cn<CR>
 map <leader>p :cp<CR>
 
 map <leader>dt :execute 'NERDTreeToggle ' . '"' . getcwd() . '"'<CR>
 let g:NERDTreeChDirMode=2
 let g:NERDTreeShowHidden=1
-
-let g:CommandTMaxFiles=40000
-map <leader>t :CommandTFlush<CR>:CommandT<CR>
 
 let g:paredit_matchlines=1000
 
@@ -65,7 +60,7 @@ map <LocalLeader>sy :autocmd BufWritePre * :%s/\s\+$//e<CR>
 map <LocalLeader>sn :autocmd! BufWritePre *<CR>
 map <LocalLeader>sl :autocmd BufWritePre *<CR>
 
-map <Leader>rb :call VimuxRunCommand("bundle exec rspec " . bufname("%"))<CR>
+map <Leader>rb :call VimuxRunCommand("clear; bundle exec rspec " . bufname("%"))<CR>
 map <Leader>rp :VimuxPromptCommand<CR>
 map <Leader>rl :VimuxRunLastCommand<CR>
 map <Leader>ri :VimuxInspectRunner<CR>
@@ -84,4 +79,3 @@ nnoremap Q <nop>
 if &term == 'xterm' || &term == 'screen'
   set t_Co=256
 endif
-
