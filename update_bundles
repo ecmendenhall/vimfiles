@@ -27,7 +27,6 @@ git_bundles = [
   "git://github.com/tpope/vim-unimpaired.git",
   "git://github.com/tsaleh/vim-supertab.git",
   "git://github.com/vim-ruby/vim-ruby.git",
-  "git://github.com/vim-scripts/CSApprox.git",
   "git://github.com/vim-scripts/Colour-Sampler-Pack.git",
   "git://github.com/vim-scripts/jquery.git"
 ]
